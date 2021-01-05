@@ -3,9 +3,9 @@
 A ideia do projeto é enviar uma notificação para o sqs fifo através do sns.
 A queue têm uma função lambda trigada a ela, então automaticamente o sqs chamará a função lambda que processará a mensagem e salvará a mesma da database.
 
-Foi criada uma outra fila chamada SQS Dead messages, ela serve para enfileirar as mensagens que por algum motivo tiveram um erro. Também está trigada ao lambda para tentar processar a mesma novamente
+Foi criada uma outra fila chamada SQS Dead messages, ela serve para enfileirar as mensagens que por algum motivo tiveram um erro. Também está trigada ao lambda para tentar processar a mesma novamente.
 
-O cloudwatch servirá para vermos os log da aplicação, caso haja algum erro
+O cloudwatch servirá para vermos os log da aplicação, caso haja algum erro.
 
 ![image](https://user-images.githubusercontent.com/37625040/103598072-77886380-4ee0-11eb-8335-e0489ef06de8.png)
 
